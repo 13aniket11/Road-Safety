@@ -411,10 +411,11 @@ appp.get('/map', async function (req, res) {
 
 // let lat = 
 // let long = 
-var server = appp.listen(process.env.port || 3000, function () {
-  var host = server.address().address
-  var port = server.address().port
+var server = appp.listen(process.env.PORT || 3000, function () {
+//   var host = server.address().address
+  console.log("App is up and running ");
+//   var port = server.address().port
 
-  console.log("Example app listening at http://%s:%s", host, port)
+//   console.log("Example app listening at http://%s:%s", host, port)
 })
 
