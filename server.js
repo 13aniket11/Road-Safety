@@ -411,7 +411,7 @@ appp.get('/map', async function (req, res) {
 
 // let lat = 
 // let long = 
-var server = appp.listen(3000, function () {
+var server = appp.listen(process.env.port || 3000, function () {
   var host = server.address().address
   var port = server.address().port
 
